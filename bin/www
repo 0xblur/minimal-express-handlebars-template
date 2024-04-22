@@ -6,8 +6,8 @@
 
 import app from "../app.js";
 import createDebugger from "debug";
-const debug = createDebugger("fitness-tracker:server")
 import http from "http";
+const debug = createDebugger("project-name:server")
 
 /**
  * Get port from environment and store in Express.
