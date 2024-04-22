@@ -1,7 +1,7 @@
 # Minimal Express + Handlebars Template
 
-# Changelog
-## **v0.1.0**
+## Changelog
+### **v0.1.0**
 - The first iteration of this template come directly from the recommendations an references found on the MDN Express Tutorial.
 - Initial setup was done with `bun init -y` because Bun is way faster than Node and almost fully compatible with it.
 - Development middleware, plugins and the base Model-View-Controller structure was generated with `bunx express-generator --no-view`
