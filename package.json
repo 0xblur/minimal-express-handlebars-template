@@ -7,9 +7,9 @@
     "node": ">= 20.12.2"
   },
   "scripts": {
-    "start": "node ./bin/www",
-    "startbun": "bun ./bin/www",
-    "watchbun": "bun --watch ./bin/www"
+    "start": "DEBUG=project-name:* --env-file=.env node ./bin/www",
+    "startbun": "DEBUG=project-name:* bun ./bin/www",
+    "watchbun": "DEBUG=project-name:* bun --watch ./bin/www"
   },
   "type": "module",
   "devDependencies": {
