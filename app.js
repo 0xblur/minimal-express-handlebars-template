@@ -1,5 +1,6 @@
 // Node
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 // Express
 import express from "express";
 import cookieParser from "cookie-parser";
@@ -21,6 +22,8 @@ const limiter = RateLimit({
 	max: 20,
 });
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const viewsDir = path.join(__dirname, "views");
 const hbsHelpers = createHbsHelpers(["comparison", "string"]);
 
